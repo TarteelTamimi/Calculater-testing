@@ -70,3 +70,4 @@ const calculator = (...args) => {
 
 //console.log(calculator(2, '*', 5, '-', 6, '/', 2, '*', 3, '+', 7, '*', 5));
 
+module.exports = calculator;
