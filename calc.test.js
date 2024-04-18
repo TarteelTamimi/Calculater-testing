@@ -104,4 +104,14 @@ describe('Calculator', () => {
 
         expect(() => calculator(firstNum, operation, secondNum)).toThrow('Invalid input type');
     });
+
+    //Test case: Ignores numbers greater than 1000
+    it('should ignore numbers greater than 1000', () => {
+        const firstNum = 1001;
+        const operation = '+';
+        const secondNum = 3;
+
+       const result = calculator(firstNum, operation, secondNum);
+        expect(result).toBe(3);
+    });
 });

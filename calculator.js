@@ -30,6 +30,9 @@ const calculator = (...args) => {
         if (typeof args[i] !== 'number') {
             operators.push(args[i]);
         } else {
+            if (args[i]>1000) {
+                args[i]=0;
+            }
             operands.push(args[i])
         }
     }
